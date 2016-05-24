@@ -1,3 +1,6 @@
 # IngSoft-2016-SeDiceAtomico
-Probando Travis
-Probando otra vez
+
+##Integrantes:
+Armando, Gaspar Ignacio
+Ceballos, Matías
+Zimmel, Ezequiel
