@@ -1,4 +1,7 @@
-  
+package Controller;
+import Model.BeatModelInterface;
+import View.DJView;
+
 public class BeatController implements ControllerInterface {
 	BeatModelInterface model;
 	DJView view;

@@ -1,4 +1,8 @@
-  
+package Controller;
+import Adapter.HeartAdapter;
+import Model.HeartModelInterface;
+import View.DJView;
+
 public class HeartController implements ControllerInterface {
 	HeartModelInterface model;
 	DJView view;

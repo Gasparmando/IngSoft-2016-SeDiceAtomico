@@ -1,4 +1,9 @@
-  
+package TestDrive;
+import Controller.BeatController;
+import Controller.ControllerInterface;
+import Model.BeatModel;
+import Model.BeatModelInterface;
+
 public class DJTestDrive {
 
     public static void main (String[] args) {
