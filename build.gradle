@@ -3,6 +3,7 @@ apply plugin: 'checkstyle'
 apply plugin: 'pmd'
 apply plugin: 'findbugs'
 apply plugin: "jacoco"
+apply plugin: "info.solidsoft.pitest"
 
 repositories {
     mavenCentral()
@@ -10,6 +11,7 @@ repositories {
 
 dependencies {
     testCompile 'junit:junit:4.10'
+    classpath 'info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.9'
 }
 
 checkstyle {
