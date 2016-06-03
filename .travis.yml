@@ -1,8 +1,6 @@
-sudo: false
-language: groovy
-jdk:
-  - oraclejdk7
-  - openjdk7
+
+language: java 
+
 env:
   - PITEST_REGRESSION_TESTS=latestOnly
 
