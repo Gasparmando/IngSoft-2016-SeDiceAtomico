@@ -1,14 +1,10 @@
+language: java
 
-language: java 
+before_install:
+ - chmod +x gradlew
 
-env:
-  - PITEST_REGRESSION_TESTS=latestOnly
-
-#Regression tests with different Gradle versions only on JDK 8
-matrix:
-  include:
-    - jdk: oraclejdk8
-      env: PITEST_REGRESSION_TESTS=quick
-
-install: ./gradlew assemble
-script: ./gradlew funcTest check --stacktrace --info --continue
+after_success:
+  - ./gradlew jacocoTestReport
+  - pip install --user codecov
+  - codecov 
+ 
